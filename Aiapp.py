@@ -47,7 +47,7 @@ Builder.load_string('''
 
 class SpellWidget(Widget):
     def ai(self):
-        openai.api_key="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"
+        openai.api_key="Your Secret APi Key"
         prompt=self.ids.userword.text
         mengine="text-davinci-003"
         comp=openai.Completion.create(engine=mengine,prompt=prompt,max_tokens=1024,n=1,stop=None,temperature=0.5)
